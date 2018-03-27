@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+	<definition name="baselayout" template="/WEB-INF/template/default.jsp">
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/tiles/body.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>
+
+	</definition>
+
+
+
+	<definition name="index" extends="baselayout">
+		<put-attribute name="title" value="Home"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/tiles/index.jsp"></put-attribute>
+	</definition>
+	
+	
+	<definition name="login" extends="baselayout">
+	<put-attribute name="title" value="Login"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/tiles/login.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="loggedout" extends="baselayout">
+	<put-attribute name="title" value="Logout"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/tiles/login.jsp"></put-attribute>
+	</definition>
+	
+
+<definition name="createpost" extends="baselayout">
+		<put-attribute name="title" value="Home"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/tiles/createpost.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="submitpost" extends="baselayout">
+		<put-attribute name="title" value="Home"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/tiles/submitpost.jsp"></put-attribute>
+	</definition>
+
+
+</tiles-definitions>
